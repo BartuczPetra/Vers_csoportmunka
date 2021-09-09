@@ -1,28 +1,64 @@
 @charset "UTF-8";
 
+body {
+    background: goldenrod;
+}
+
 main {
     
     max-width: 800px;
     margin:auto;
     padding: 10px;
     display:grid;
-
-    
-
+    background:white;
+    grid-template-areas:
+    'h h h h '
+    'n n n n '
+    'a a a a '
+    'f f f f ';
 }
 
 article {
+    grid-area: a;
+   
 
 }
 
 header {
+    grid-area:h;
 
 }
 
 nav{
+    grid-area:n;
+   
+    
 
 }
 
 footer {
-
+grid-area: f;
 }
+
+ nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+
+  li a {
+    
+   
+    
+    text-decoration: none;
+  }
+
+  li {
+      text-align: center;
+      float: left;
+      width:100px;
+  }
+
