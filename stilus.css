@@ -12,7 +12,8 @@ main {
 }
 
 article {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 header {
@@ -26,3 +27,15 @@ nav{
 footer {
 
 }
+
+div img{
+    width: 100px;
+    height: 150px;
+}
+
+@media screen and (max-width:400px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
