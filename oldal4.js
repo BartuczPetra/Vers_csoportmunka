@@ -14,8 +14,6 @@ var versTomb=[
 ]
 
 $(function(){
-    /* html elembe tartalom elehelyezése */
-
     $(".kep1").on("mouseover", esemenyFel);
     $(".kep2").on("mouseover", esemenyFel);
     $(".kep1").on("mouseout", esemenyLe);
